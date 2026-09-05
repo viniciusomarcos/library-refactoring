@@ -1,3 +1,20 @@
+class Price:
+    def get_charge(self, days_rented: int) -> float:
+        pass
+
+    def get_frequent_renter_points(self, days_rented: int) -> int:
+        # Por padrão, a maioria dos filmes retorna 1 ponto
+        return 1
+
+class RegulaPrice(Price):
+    pass
+
+class NewReleasePrice(Price):
+    pass
+
+class ChildrenPrice(Price):
+    pass
+
 class Book:
 
     REGULAR: int = 0
